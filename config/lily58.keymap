@@ -112,13 +112,13 @@
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |          | BT1     | BT2    |  BT3 |  BT4  |  BT5 |                    |RGB_TOG|RGB_EFF|RGB_HUI|RGB_HUD|RGB_SAI|RGB_SAD|
-            // |          |         |        |      |       |      |                    |       |RGB_BRI|RGB_BRD|  [   |   ]   |   \   |
+            // |          |STUDIO_UL|        |      |       |      |                    |       |RGB_BRI|RGB_BRD|  [   |   ]   |   \   |
             // |   ~      |  !      |  @     |  #   |  $    |  %   |                    |  ^   |  &    |  *    |  (   |   )   |   _   |
             // | SHIFT    |  EP_ON  | EP_OFF |      |  (    |  {   |       |  |   DEL   |  }   |  )    |  +    |  {   |   }   | SHIFT |
             //                               |      |       |      |       |  |         |      |       |       |
             bindings = <
     &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
-    &trans       &trans        &trans        &trans        &trans        &trans                                                  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp LBKT         &kp RBKT         &kp BSLH
+    &trans       &studio_unlock &trans       &trans        &trans        &trans                                                  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp LBKT         &kp RBKT         &kp BSLH
     &kp TILDE    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                               &kp CARET        &kp AMPS         &kp KP_MULTIPLY  &kp LPAR         &kp RPAR         &kp UNDER
     &kp LSHIFT   &trans        &trans        &kp LPAR      &kp LBRC      &trans    &trans    &kp DEL                             &kp RBRC         &kp RPAR         &kp KP_PLUS      &kp LBRC         &kp RBRC         &kp RSHFT
                                              &trans        &trans        &trans    &trans    &trans                              &trans           &trans           &trans    
